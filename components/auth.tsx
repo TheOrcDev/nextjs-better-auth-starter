@@ -13,7 +13,7 @@ export const SignIn = () => {
         await authClient.signIn.email({
           email: "orcdev@test.com",
           password: "password123",
-          // callbackURL: "/dashboard" -> enable to redirect to dashboard
+          callbackURL: "/dashboard",
         });
         router.refresh();
       }}
@@ -34,7 +34,7 @@ export const SignUp = () => {
           email: "orcdev@test.com",
           password: "password123",
           name: "Orc Dev",
-          // callbackURL: "/dashboard" -> enable to redirect to dashboard
+          callbackURL: "/dashboard",
         });
         router.refresh();
       }}
