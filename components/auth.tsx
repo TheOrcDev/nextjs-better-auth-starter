@@ -11,8 +11,8 @@ export const SignIn = () => {
       className="bg-neutral-700 text-white p-2 rounded-md"
       onClick={async () => {
         await authClient.signIn.email({
-          email: "johndoe@acme.com",
-          password: "JohnDoeAcmeCom",
+          email: "orcdev@test.com",
+          password: "password123",
           // callbackURL: "/dashboard" -> enable to redirect to dashboard
         })
         router.refresh()
@@ -31,9 +31,9 @@ export const SignUp = () => {
       className="bg-neutral-700 text-white p-2 rounded-md"
       onClick={async () => {
         await authClient.signUp.email({
-          name: "John Doe",
-          email: "johndoe@acme.com",
-          password: "JohnDoeAcmeCom",
+          email: "orcdev@test.com",
+          password: "password123",
+          name: "Orc Dev",
           // callbackURL: "/dashboard" -> enable to redirect to dashboard
         })
         router.refresh()
