@@ -1,6 +1,6 @@
-import { SignIn, SignOut, SignUp } from "@/components/auth";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
+import { SignIn, SignOut, SignUp } from "@/components/auth";
 
 export default async function Home() {
   const session = await auth.api.getSession({
